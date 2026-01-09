@@ -3,184 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="detail.css">
   <title>Werken bij werktijden.nl</title>
 </head>
 
 <body>
 
-  <!-- Header Logo + Hamburger -->
-  <header>
-    <div>
-      <a href="/" aria-label="werktijden.nl home">
-        <img src="logo.svg" alt="werktijden.nl logo">
-      </a>
-    </div>
+<header class="site-header">
+  <a href="/" class="logo">
+    <img src="assets/werktijden-logo.svg" alt="werktijden.nl logo">
+  </a>
 
-    <button aria-label="Menu openen">
-      ☰
-    </button>
-  </header>
+  <button aria-label="Menu openen" class="hamburger">☰</button>
+</header>
 
-  <main>
+<main>
 
-    <!-- Eerste tekstblok -->
-    <section>
-      <h1>
-        Werken bij <span>werktijden.nl</span>
-      </h1>
-
-      <p>
-        We zijn op zoek naar mensen die een passie hebben voor marketing.
-        Ook zoeken we naar mensen die onze klanten vol enthousiasme de allerbeste ervaring willen bieden.
-        Mensen die het verschil willen maken.
-      </p>
-    </section>
-
-    <!-- Sectie Voor Vacature kaarten -->
-    <section aria-label="Vacatures">
-
-  <ul>
-
-    <li aria-label="Klantadviseur vacature kaart">
-      <article>
-
-        <header>
-          <span>Nieuw</span>
-          <h2>Klantadviseur</h2>
-        </header>
-
-        <ul>
-          <li>Fulltime</li>
-          <li>Parttime</li>
-          <li>Ma-vr</li>
-          <li>32 – 40 uur</li>
-          <li>€ 2.500 – € 4.000 per maand</li>
-        </ul>
-
-        <button>
-          <a href="#">Vacature bekijken</a>
-        </button>
-
-      </article>
-    </li>
-
-    <li aria-label="Marketing Coördinator vacature kaart"></li>
-      <article>
-
-        <header>
-          <span>Nieuw</span>
-          <h2>Marketing Coördinator</h2>
-        </header>
-
-        <ul>
-          <li>Fulltime</li>
-          <li>Ma-vr</li>
-          <li>40 uur</li>
-          <li>€ 2.500 – € 4.000 per maand</li>
-        </ul>
-
-         <button>
-          <a href="#">Vacature bekijken</a>
-        </button>
-
-      </article>
-    </li>
-
-    <li aria-label="Sales vacature kaart"></li>
-      <article>
-
-        <header>
-          <span>Urgent</span>
-          <h2>Sales Support Medewerker</h2>
-        </header>
-
-        <ul>
-          <li>Fulltime</li>
-          <li>Parttime</li>
-          <li>Ma-vr</li>
-          <li>32 – 40 uur</li>
-          <li>€ 2.500 – € 4.500 per maand</li>
-        </ul>
-
-         <button>
-          <a href="#">Vacature bekijken</a>
-        </button>
-
-      </article>
-    </li>
-
-  </ul>
-
-</section>
-
-
-    <!-- Tweede tekstblok -->
-    <section>
-      <h1>Durf jij de uitdaging aan?</h1>
-      <p>
-        Bij Werktijden.nl bieden we een dynamische werkomgeving waar jouw kennis en ervaring niet alleen gewaardeerd,
-         maar ook verder ontwikkeld worden.
-         Solliciteer vandaag nog en laat ons weten hoe jij het verschil kunt maken!
-      </p>
-    </section>
-
-    <section>
-
-  <h3>Maak gemakkelijk roosters met Werktijden.nl. 
-    Probeer alle functies 14 dagen gratis uit. 
-    Geen aansluitkosten en geheel vrijblijvend.</h3>
-
-  <button type="button">
-    Start je proefperiode
-  </button>
-
-  <p>
-    Direct opzegbaar, stopt automatisch.
-  </p>
-
-</section>
- 
-<footer>
-
-  <section aria-label="Bedrijfsinformatie">
-
+  <!-- Intro -->
+  <section class="intro">
+    <h1>Werken bij <span>werktijden.nl</span></h1>
     <p>
-      <strong>werktijden.nl</strong>
+      We zijn op zoek naar mensen die een passie hebben voor marketing.
+      Ook zoeken we naar mensen die onze klanten vol enthousiasme de allerbeste ervaring willen bieden.
+      Mensen die het verschil willen maken.
     </p>
-
-    <p>
-      <a href="tel:0880550550">088-0550550</a>
-    </p>
-
-    <nav aria-label="Footer navigatie">
-      <ul>
-        <li>
-          <a href="/privacy">Privacy</a>
-        </li>
-        <li>
-          <a href="/voorwaarden">Voorwaarden</a>
-        </li>
-      </ul>
-    </nav>
-
-    <p>
-      Copyright © 2026 Werktijden.nl
-    </p>
-
-
-  
-<label for="functies">functies</label>
-<select name="functies" id="functies">
-  <option value="personeelsplanning">personeelsplanning</option>
-  <option value="prikklok">prikklok</option>
-  <option value="verlofregistratie">verlofregistratie</option>
-  <option value="urenregistratie">urenregistratie</option>
-</select>
   </section>
 
-</footer>
+  <!-- Vacatures -->
+  <section aria-label="Vacatures">
+    <ul class="vacature-lijst">
 
-  </main>
+      <li class="vacature">
+        <article class="kaart">
+          <header>
+            <span class="badge">Nieuw</span>
+            <h2>Klantadviseur</h2>
+          </header>
+
+          <ul class="tags">
+            <li>Fulltime</li>
+            <li>Parttime</li>
+            <li>Ma-vr</li>
+            <li>32 – 40 uur</li>
+            <li>€ 2.500 – € 4.000 p/m</li>
+          </ul>
+
+          <a href="#" class="cta">Vacature bekijken</a>
+        </article>
+      </li>
+
+      <!-- Actieve kaart -->
+      <li class="vacature actief" aria-current="true">
+        <article class="kaart">
+          <header>
+            <span class="badge">Nieuw</span>
+            <h2>Marketing Coördinator</h2>
+          </header>
+
+          <ul class="tags">
+            <li>Fulltime</li>
+            <li>Ma-vr</li>
+            <li>40 uur</li>
+            <li>€ 2.500 – € 4.000 p/m</li>
+          </ul>
+
+          <a href="#" class="cta">Vacature bekijken</a>
+        </article>
+      </li>
+
+      <li class="vacature">
+        <article class="kaart">
+          <header>
+            <span class="badge urgent">Urgent</span>
+            <h2>Sales Support Medewerker</h2>
+          </header>
+
+          <ul class="tags">
+            <li>Fulltime</li>
+            <li>Parttime</li>
+            <li>Ma-vr</li>
+            <li>32 – 40 uur</li>
+            <li>€ 2.500 – € 4.500 p/m</li>
+          </ul>
+
+          <a href="#" class="cta">Vacature bekijken</a>
+        </article>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- Tekst -->
+  <section class="verhaal">
+    <h2>Durf jij de uitdaging aan?</h2>
+    <p>
+      Bij Werktijden.nl bieden we een dynamische werkomgeving waar jouw kennis
+      en ervaring niet alleen gewaardeerd, maar ook verder ontwikkeld worden.
+    </p>
+  </section>
+
+  
+  <section class="aanmelding"> 
+    <h3>Maak gemakkelijk roosters met Werktijden.nl. 
+      Probeer alle functies 14 dagen gratis uit.
+       Geen aansluitkosten en geheel vrijblijvend.</h3> 
+       <button class="proef" type="button"> Start je proefperiode </button> 
+       <p> Direct opzegbaar, stopt automatisch. </p> 
+      </section>
+
+  <!-- CTA -->
+  <footer> 
+   <section aria-label="Bedrijfsinformatie">
+    <p> <strong>werktijden.nl</strong> </p> 
+      <p> <a href="tel:0880550550">088-0550550</a> </p> 
+     <nav aria-label="Footer navigatie"> 
+       <ul> 
+         <li> <a href="/privacy">Privacy</a> </li> 
+          <li> <a href="/voorwaarden">Voorwaarden</a> </li> 
+       </ul> 
+     </nav> 
+          <p> Copyright © 2026 Werktijden.nl </p>
+           <ul> <li><a href="/">functies</a></li> 
+              <li><a href="Doorstroom.html">Branches</a></li> 
+                <li><a href="Lado-en-AD-profielen.html">Klanten</a></li>
+                 <li><a href="nieuws.html">Koppelingen</a></li>
+                   <li><a href="" >tarieven</a></li> </ul> 
+                 </section> 
+              
+</footer> 
+</main>
 
 </body>
 </html>

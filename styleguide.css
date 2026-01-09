@@ -1,0 +1,73 @@
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: #0f172a;
+}
+
+:root{
+/* Colors */
+    --primary-color: hsl(142.13, 76.22%, 36.27%);
+    --accent-color-urgent: hsl(0, 70%, 35.29%);
+    --accent-lighter-color-urgent: hsl(0, 93.33%, 94.12%);
+     --accent-color-nieuw: hsl(0, 70%, 35.29%);
+    --accent-lighter-color-nieuw: hsl(0, 93.33%, 94.12%);
+    --white-color: hsl(0 0% 99%);
+    --black-color: hsl(0 1% 21%);
+
+
+    /* Line height */
+    --line-height-heading: 1.2;
+    --line-height-text: 1.4;
+
+    /* Button */
+    --button-size: 10px 25px;
+    --border-radius: 5px;
+    --font-size-button: 0.9rem;
+
+    /* Typographie */
+    --font-weight-standard: 400;
+    --font-weight-heading: 700;
+    --font-family: system-ui, sans-serif;
+
+    --font-size-badge: 0.75rem;
+    --font-size-s: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.25rem;
+
+    --font-size-heading-xs: 1.3rem;
+    --font-size-heading-s: 1.5rem;
+    --font-size-heading-m: 2rem;
+    --font-size-heading-l: 2.5rem;
+  }
+.Kleur figure:nth-of-type(1) code {
+  background-color: var(--primary-color);
+
+   border: 1px var(--black-color);
+ 
+}
+  .proef{
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-heading);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.tags li {
+  background: #e0e3f3;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}

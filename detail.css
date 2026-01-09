@@ -1,0 +1,179 @@
+/* ===== Base ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #0f172a;
+}
+
+h1 span {
+  color: var(--primary-color);
+}
+
+/* ===== Header ===== */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* ===== Intro ===== */
+
+.intro {
+  padding: 2rem 1rem;
+}
+
+/* ===== Vacatures ===== */
+
+.vacature-lijst {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.vacature-lijst li{
+  gap: 2;
+}
+.vacature {
+  min-width: 85%;
+  scroll-snap-align: center;
+}
+
+.kaart {
+  background: #f5f6fa;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  
+}
+
+
+
+/* Badge */
+.badge {
+  display: inline-block;
+  background: #d1fae5;
+  color: #065f46;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: var(--font-size-badge);
+  font-weight: 600;
+}
+
+.badge.urgent {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.tags li {
+  background: #e0e3f3;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+/* CTA */
+.cta {
+  display: block;
+  text-align: center;
+  background: #4f8f6b;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* ===== CTA blok ===== */
+
+.verhaal{
+  padding: 2rem 1rem;
+}
+.aanmelding {
+  background-color: #0f9d66;
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.aanmelding h3{
+  font-size: var(--font-size-heading-s);
+  margin-bottom: 2rem;
+}
+
+
+.aanmelding p{
+  margin-top: 1rem;
+  font-size: var(--font-size-s);
+}
+
+/* ===== Footer ===== */
+
+footer {
+  background-color: #0b1324;
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+footer nav li {
+  margin-bottom: 0.5rem;
+}
+
+footer > section > ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+footer > section > ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Desktop ===== */
+
+@media (min-width: 768px) {
+
+  .vacature-lijst {
+    overflow: visible;
+    justify-content: center;
+  }
+
+  .vacature {
+    min-width: 280px;
+  }
+
+  .intro,
+  .vacatures,
+  .verhaal {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
