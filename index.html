@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="detail.css">
   <title>Werken bij werktijden.nl</title>
@@ -31,12 +31,16 @@
   </section>
 
   <!-- Vacatures -->
-  <section aria-label="Vacatures">
-    <ul class="vacature-lijst">
-
-      <li class="vacature">
-        <article class="kaart">
+  <div class="accordion-wrapper">
+			<details name="accordion" id="boating" open>
+			<summary>
+				<span class="vaca">Klant adviseur</span>
+				<img draggable=false src="assets/image.jpg" alt="">
+			</summary>
+			<div class="details-content-wrapper">
+				 <article class="kaart">
           <header>
+					
             <span class="badge">Nieuw</span>
             <h2>Klantadviseur</h2>
           </header>
@@ -50,14 +54,19 @@
           </ul>
 
           <a href="#" class="cta">Vacature bekijken</a>
+					
         </article>
-      </li>
-
-      <!-- Actieve kaart -->
-      <li class="vacature actief" aria-current="true">
-        <article class="kaart">
-          <header>
-            <span class="badge">Nieuw</span>
+					 
+			</div>
+		</details>
+		<details name="accordion" id="anchoring">
+			<summary>
+				<span class="vaca">Marketing coordinator</span>
+				<img draggable=false src="assets/Blur_GettyImages-629303208.jpg.png" alt="">
+			</summary>
+			<div class="details-content-wrapper">
+        <article class="kaart"></article>
+         <span class="badge">Nieuw</span>
             <h2>Marketing Coördinator</h2>
           </header>
 
@@ -70,9 +79,16 @@
 
           <a href="#" class="cta">Vacature bekijken</a>
         </article>
-      </li>
-
-      <li class="vacature">
+				
+			</div>
+		</details>
+		<details name="accordion" id="fishing">
+			<summary>
+				<span class="vaca">Sale support medewerker</span>
+				<img draggable=false src="assets/Sales-Support-job-description_4987503-1024x576.jpg" alt="">
+			</summary>
+			<div class="details-content-wrapper">
+				<li class="vacature">
         <article class="kaart">
           <header>
             <span class="badge urgent">Urgent</span>
@@ -89,10 +105,11 @@
 
           <a href="#" class="cta">Vacature bekijken</a>
         </article>
-      </li>
 
-    </ul>
-  </section>
+			</div>
+		</details>
+		</div>
+	</div>
 
   <!-- Tekst -->
   <section class="verhaal">
