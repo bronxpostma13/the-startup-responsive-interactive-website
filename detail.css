@@ -173,7 +173,8 @@ details {
 			font-size: 20px;
 			padding: 0 8em 0 0;
 			text-wrap: nowrap;
-			transform: rotate(-0.25turn)
+			transform: rotate(-0.25turn);
+      font-weight:var(--font-weight-heading);
 		}
 
 
@@ -250,7 +251,7 @@ details {
 .badge {
   display: inline-block;
   background: #d1fae5;
-  color: #065f46;
+  color: hsl(163.15, 88.12%, 19.8%);
   padding: 0.3rem 0.8rem;
   border-radius: 999px;
   font-size: var(--font-size-badge);
@@ -259,7 +260,8 @@ details {
 
 .badge.urgent {
   background: #fee2e2;
-  color: #991b1b;
+  color: var(--accent-color-urgent);
+  
 }
 
 /* Tags */
