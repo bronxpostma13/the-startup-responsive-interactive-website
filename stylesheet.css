@@ -10,8 +10,8 @@ body {
     --primary-color: hsl(142.13, 76.22%, 36.27%);
     --accent-color-urgent: hsl(0, 70%, 35.29%);
     --accent-lighter-color-urgent: hsl(0, 93.33%, 94.12%);
-     --accent-color-nieuw: hsl(0, 70%, 35.29%);
-    --accent-lighter-color-nieuw: hsl(0, 93.33%, 94.12%);
+     --accent-color-nieuw: hsl(163.15, 88.12%, 19.8%);
+    --accent-lighter-color-nieuw: hsl(149.27, 80.39%, 90%);
     --white-color: hsl(0 0% 99%);
     --black-color: hsl(0 1% 21%);
 
