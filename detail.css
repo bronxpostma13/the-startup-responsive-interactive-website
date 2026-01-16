@@ -21,11 +21,15 @@ p{
 
 /* ===== Header ===== */
 
-.site-header {
+.site-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  position: sticky;
+  top: 0px;
+  z-index:1000000;
+  background-color: var(--white-color);
 }
 
 /* ===== Intro ===== */
