@@ -56,6 +56,45 @@ body {
   font-weight: var(--font-weight-heading);
 }
 
+.gratis {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-self:auto ;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 1em;
+    font-weight: 600;
+    text-decoration-line: none;
+   }
+
+    .cta {
+  display: block;
+  text-align: center;
+  background: #4f8f6b;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration-line: none;
+}
+
+.inlog{
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: solid;
+  border-width: thin;
+  display: flex;
+  
+  
+  
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-heading);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -71,3 +110,109 @@ body {
   border-radius: 999px;
   font-size: 0.85rem;
 }
+
+  /* ===== Mega menu ===== */
+
+ /* =========================
+   WERKTIJDEN MEGA MENU
+   Desktop only
+========================= */
+  .wt-navbar {
+    display: flex;
+    gap: 4.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wt-navbar > li {
+    position: relative;
+  }
+
+  .wt-navbar a {
+    padding: 30px 12px;
+    display: block;
+    font-weight: bold;
+    color: var(--black-color);
+    text-decoration: none;
+  }
+
+  /* ===== Mega menu ===== */
+
+ .wt-submenu{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100vw;
+  max-width: 1200px;
+  margin-left: calc(-10vw + 50%);
+  background: white;
+  padding: 32px 48px;
+  
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+  gap: 24px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: translateY(10px);
+  z-index: 999;
+}
+
+.wt-dropdown:hover .wt-submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+  
+  .wt-dropdown {
+  position: static; /* of gewoon verwijderen */
+}
+
+  
+  /* ===== Feature cards ===== */
+
+  .wt-feature-card {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #111;
+    transition: background 0.2s ease;
+    border-style:thin;
+  }
+
+  .wt-feature-card:hover {
+    background-color: grey;
+  }
+
+  .wt-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    font-size: 20px;
+  }
+
+  .wt-text h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+  }
+
+  .wt-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
